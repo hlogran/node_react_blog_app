@@ -35,7 +35,7 @@ test('Can search articles by author', async ()=>{
     .send()
     .query({authors: [authorTwoId.toString(), authorThreeId.toString()]})
     .expect(200);
-  expect(response.body.length).toBe(2);
+  expect(response.body.length).toBe(1);
 })
 
 test('Can create article', async()=>{
