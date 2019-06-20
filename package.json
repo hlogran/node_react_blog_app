@@ -1,0 +1,37 @@
+{
+  "name": "blog_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "server": "env-cmd -f ./config/dev.env nodemon src/index.js",
+    "test": "env-cmd -f ./config/test.env jest --watchAll --runInBand",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlogran/blog_api.git"
+  },
+  "author": "Hernán Logran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hlogran/blog_api/issues"
+  },
+  "homepage": "https://github.com/hlogran/blog_api#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.17.0",
+    "jest": "^24.7.1",
+    "mongoose": "^5.5.11"
+  },
+  "devDependencies": {
+    "env-cmd": "^9.0.1",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
+  }
+}

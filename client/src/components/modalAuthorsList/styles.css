@@ -1,0 +1,45 @@
+.ModalAuthorsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 100000;
+}
+
+.ModalAuthorsList-container {
+  min-width: 400px;
+  max-height: 85%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.ModalAuthorsList-body {
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.ModalAuthorsList-footer {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 1vh;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+
+.ModalAuthorsList-header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: lightgray;
+  position: relative;
+}

@@ -1,0 +1,29 @@
+.Article {
+  padding: 1vh;
+  margin-bottom: 1vh;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  box-sizing: border-box;
+}
+.Article-commands-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.Article-commands-container button {
+  background:none;
+  color: #0000EE;
+  border:none;
+  padding:0!important;
+  font: inherit;
+  border-bottom:1px solid #0000EE;
+  cursor: pointer;
+  margin: 0 1vh;
+  outline: none;
+
+}
+
+
