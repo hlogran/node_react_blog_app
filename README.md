@@ -5,7 +5,7 @@ Technologies:
 ======
 - Node.JS
 - Express
-- MongoDB
+- Mongoose
 - React
 - React Router
 - Redux
